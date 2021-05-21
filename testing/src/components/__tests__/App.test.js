@@ -9,7 +9,7 @@ let wrapped;
 beforeEach(() => {
   wrapped = shallow(<App />);
 });
-
+// find returns an Array of each instance of commentBox component 
 it('shows a comment box', () => {
   expect(wrapped.find(CommentBox).length).toEqual(1);
 });
